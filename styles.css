@@ -1,0 +1,916 @@
+/* Background IMG */
+#head{
+    background-color: black;
+}
+
+#head-background {
+    background-image: linear-gradient(#030a259d, #1417225d), linear-gradient(#22283f5d, #83818f7a), url('./Header/Edit1.jpg');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), linear-gradient(rgba(32, 32, 32, 0), rgba(94, 94, 94, 0.616)), url('./Header/Edit1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Alineamos el gradiente blanco en la parte de abajo */
+    height: 70vh;
+    position: relative; /* Aseguramos que los elementos hijos estén posicionados correctamente */
+}
+
+@media (max-width: 768px) {
+    #head-background {
+        height: 90vh;
+    }
+  }
+
+/* Navbar */
+.bar-text-Roddy{
+    font-weight: 500;
+}
+
+.bar-text-Roddy:hover{
+    color: white;
+}
+/*NavBar*/
+.nav-link {
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-link::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    content: "";
+    transition: width 0.6s;
+  }
+  
+  .nav-link:hover::before {
+    width: 100%;
+  }
+
+#bar-text{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+#bar-text:hover{
+    color: white;
+}
+
+#bar-text-slash{
+    font-weight: 500;
+}
+
+#bar-text-slash:hover{
+    color: white;
+}
+
+
+/*Text in the Head*/
+#h1{
+    font-size:110px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-top: 100px;
+}
+
+@media (max-width: 876px) {
+    #h1 {
+      font-size: 110px; /* Tamaño de fuente reducido para dispositivos móviles */
+      margin-top: 50px; /* Margen superior reducido para dispositivos móviles */
+      margin-bottom: 30px;
+      line-height: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #h1 {
+      font-size: 60px; /* Tamaño de fuente reducido para dispositivos móviles */
+      margin-top: 50px; /* Margen superior reducido para dispositivos móviles */
+      margin-bottom: 30px;
+      line-height: 1em;
+    }
+}
+  
+#h3{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+    margin-top: -15px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    #h3 {
+      font-size: 27px; /* Tamaño de fuente reducido para dispositivos móviles */
+    }
+  }
+
+/* Section 2*/
+
+/* text h2 */
+#h2{
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(12, 12, 12);
+    padding-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #h2 {
+      font-size: 70px; /* Tamaño de fuente reducido para dispositivos móviles */
+    }
+  }
+
+/* proyect text */
+#proyect-text-one, #proyect-text-two{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.card-new {
+    width: 31em;
+    min-height: 22.5em;
+    background: #111216;
+    /* background: #171717; */
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 375px) {
+    .card-new {
+      width: 11em;
+      margin-left: 45px; /* Cambia el valor de los píxeles según tu preferencia */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .card-new {
+      width: 21em;
+      margin-left: 35px; /* Cambia el valor de los píxeles según tu preferencia */
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .card-new {
+      width: 24em;
+      margin-left: 15px; /* Cambia el valor de los píxeles según tu preferencia */
+    }
+  }
+
+  @media screen and (max-width: 1124px) {
+    .card-new {
+      width: 24em;
+      margin-left: 15px; /* Cambia el valor de los píxeles según tu preferencia */
+    }
+  }
+  
+.card-new span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+
+  .card-new .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.95em;
+    margin: 1em;
+  }
+  
+  .card-new .img {
+    width: 7.8em;
+    height: 4.8em;
+    /* background: white; */
+    background-image: url('./PizzaDay/2237015.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease,filter 0.4s ease;
+  }
+
+  .card-new .img-pdf {
+    width: 7.8em;
+    height: 4.8em;
+    /* background: white; */
+    background-image: url('./PDF/pdf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease,filter 0.4s ease;
+  }
+
+  .card-new .img-pdf:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    filter: drop-shadow(0 0 0.20rem #0066c5);
+  }
+
+  .box-proyect-title{
+    padding-top: 15px;
+  }
+
+  .card-new .img:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    filter: drop-shadow(0 0 0.20rem #0066c5);
+  }
+  
+  .card-new .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+/* Button */
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #2d9ae2, #0034e0);
+    color: ghostwhite;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+  
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+  
+
+/* skils One*/
+.skills-one .customCheckBoxHolder {
+    margin-left: 5px;
+    display: flex;
+  }
+  
+.skills-one .customCheckBox {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: color, background-color, box-shadow;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
+  }
+  
+.skills-one .customCheckBox:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+  }
+  
+.skills-one .customCheckBox .inner {
+    font-size: 13px;
+    font-weight: 700;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
+  }
+  
+.skills-one .customCheckBox:hover .inner {
+    transform: translateY(-2px);
+  }
+  
+.skills-one .customCheckBoxWrapper:first-of-type .customCheckBox {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0px;
+  }
+  
+.skills-one .customCheckBoxWrapper:last-of-type .customCheckBox {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0px;
+  }
+  
+.skills-one .customCheckBoxInput {
+    display: none;
+  }
+
+/* skils Two*/
+.skills-Two .customCheckBoxHolder {
+    margin-left: 5px;
+    display: flex;
+  }
+  
+.skills-Two  .customCheckBox {
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: color, background-color, box-shadow;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
+  }
+  
+.skills-Two .customCheckBox:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+  }
+  
+.skills-Two .customCheckBox .inner {
+    font-size: 13px;
+    font-weight: 700;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
+  }
+  
+.skills-Two .customCheckBox:hover .inner {
+    transform: translateY(-2px);
+  }
+  
+.skills-Two .customCheckBoxWrapper:first-of-type .customCheckBox {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0px;
+  }
+  
+.skills-Two .customCheckBoxWrapper:last-of-type .customCheckBox {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0px;
+  }
+  
+.skills-Two .customCheckBoxInput {
+    display: none;
+  }
+
+/* skill-Three */
+.customCheckBoxHolder-Three {
+    margin-left: 10px;
+    display: flex;
+  }
+  
+  .customCheckBox-Three {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: color, background-color, box-shadow;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
+  }
+  
+  .customCheckBox-Three:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+  }
+  
+  .customCheckBox-Three .inner-Three {
+    font-size: 13px;
+    font-weight: 700;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
+  }
+  
+  .customCheckBox-Three:hover .inner-Three {
+    transform: translateY(-2px);
+  }
+  
+  /* Multiple Checkboxes can be chained together for a radio input */
+  .customCheckBoxWrapper-Three:first-of-type .customCheckBox-Three {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0px;
+  }
+  
+  .customCheckBoxWrapper-Three:last-of-type .customCheckBox-Three {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0px;
+  }
+  
+  .customCheckBoxInput-Three {
+    display: none;
+  }
+  
+/* Card Shahow */
+   
+   .card-info {
+    filter: drop-shadow(0 0 0.30rem #0066c5);
+   }
+
+   .card-info-border{
+    border: 2px solid #0066c5;
+   }
+   
+/* Social Media Contact */
+.SocialMedia-a{
+    text-decoration: none;
+}
+
+.SocialMedia-a:hover{
+    text-decoration: none;
+}
+
+.link-socialmedia{
+    text-decoration: none;
+}
+
+.link-socialmedia:hover{
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 15px; */
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    width: auto;
+    height: 40px;
+    margin: 10px;
+  }
+  
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+    padding-top: 17px;
+    padding-right: 10px;
+  }
+  
+  .button svg path {
+    transition: 400ms;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+  }
+  
+  .button:hover .text {
+    color: #181717;
+  }
+  
+  .button:hover svg path {
+    fill: #181717;
+  }
+
+.bi{
+    color: white;
+    width: 20px;
+    height: auto;
+}
+
+
+.btn-social:hover{
+    transform: scale(1.15,1.15);
+    transition: transform 0.3s ease;
+}
+
+.SocialMedia-Text{
+    color: white;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.btn-SocialMedia{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media (max-width: 768px) {
+    .btn-SocialMedia {
+        width: 300px;
+        right: 27px;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.4) 25px 2px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+  }
+/* about */
+.bg-about{
+    height: 95vh;
+}
+
+@media (max-width: 968px) {
+    .bg-about {
+        height: 123vh;
+    }
+  }
+
+.about-card-shadow{
+    filter: drop-shadow(0 0 0.60rem #0066c5);
+}
+
+.about-card-border{
+    border: 5px solid #0066c5;
+}
+
+.about-text{
+    font-weight:490;
+}
+
+.About-card{
+    width:900px; 
+    height: auto; 
+    right: 100px;
+    margin: 3px;
+    margin-top: 40px;
+}
+
+@media (max-width: 968px) {
+    .About-card {
+        width: 650px;
+        height: auto;
+        left: 10px;
+        margin-top: 20px;
+    }
+  }
+
+@media (max-width: 768px) {
+    .About-card {
+        width: 400px;
+        height: auto;
+        left: 5px;
+        margin-top: 20px;
+    }
+  }
+
+/* Skill */
+.text-skills-h3{
+    color: white;
+}
+
+.bg-skills{
+    height: 40vh;
+}
+
+.card-new-two {
+    width: 50em;
+    height: auto;
+    background: #111216;
+    /* background: #171717; */
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto 15px; /* Use 'auto' for left and right margins to center horizontally */
+  }
+  
+  /* Media query para pantallas de hasta 600px */
+  @media (max-width: 1000px) {
+    .card-new-two {
+      width: 100%; /* Cambiamos el ancho al 100% para que se ajuste al ancho de la pantalla */
+      margin-left: 0; /* Quitamos el margen izquierdo para que se alinee correctamente */
+      margin-right: 0; /* Quitamos el margen derecho para que se alinee correctamente */
+      /* Puedes agregar otros estilos específicos para pantallas pequeñas si es necesario */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .card-new-two {
+      width: 100%; /* Cambiamos el ancho al 100% para que se ajuste al ancho de la pantalla */
+      margin-left: 0; /* Quitamos el margen izquierdo para que se alinee correctamente */
+      margin-right: 0; /* Quitamos el margen derecho para que se alinee correctamente */
+      /* Puedes agregar otros estilos específicos para pantallas pequeñas si es necesario */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card-new-two {
+      width: 100%; /* Cambiamos el ancho al 100% para que se ajuste al ancho de la pantalla */
+      margin-left: 0; /* Quitamos el margen izquierdo para que se alinee correctamente */
+      margin-right: 0; /* Quitamos el margen derecho para que se alinee correctamente */
+      /* Puedes agregar otros estilos específicos para pantallas pequeñas si es necesario */
+    }
+  }
+
+/* skills */
+.card-info-Two .skills-one .customCheckBoxHolder {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+.card-info-Two .skills-one .customCheckBox {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: color, background-color, box-shadow;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
+  }
+  
+.card-info-Two .skills-one .customCheckBox:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+  }
+  
+.card-info-Two .skills-one .customCheckBox .inner {
+    font-size: 13px;
+    font-weight: 700;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
+  }
+  
+.card-info-Two .skills-one .customCheckBox:hover .inner {
+    transform: translateY(-2px);
+  }
+
+.card-info-Two .skills-one .customCheckBoxWrapper{
+    margin-bottom: 10px;
+  }
+
+  .card-info-Two .skills-one .customCheckBoxWrapper .customCheckBox{
+    padding: 20px;
+  }
+  
+.card-info-Two .skills-one .customCheckBoxWrapper:first-of-type .customCheckBox {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0px;
+  }
+  
+.card-info-Two .skills-one .customCheckBoxWrapper:last-of-type .customCheckBox {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0px;
+  }
+  
+.card-info-Two .skills-one .customCheckBoxInput {
+    display: none;
+  }
+
+#h25{
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.table-skills-box tbody tr td .BackEnd-text, .FrontEnd-text{
+  text-align: center;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.FrontEnd-box{
+  display: block;
+}
+
+.skills-one, .skills-Two, .skill-three, .customCheckBoxHolder-Three{
+  display:grid;
+  justify-content: center;
+}
+
+.table-proyect {
+    background-color: #16191f;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    display:grid;
+    justify-content: center;
+}
+.table-proyect  tr td{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.table-proyect  tr td:hover{
+    background-color: rgba(30, 34, 43, 0.651);
+    cursor: pointer;
+
+}
+.box-table-skills-container{
+  background-color: #16191f;
+}
+
+.table-skills-box{
+  border: solid 2px; 
+  border-color: #0099ff; 
+  width: 700px;
+  min-height: auto;
+  box-shadow: 0px 0px 15px 0px #0066c5;
+}
+
+.table-skills-box tr{
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.table-skills-box tr td{
+  font-weight: 600;
+  letter-spacing: 2px; 
+}
+
+.tag-skills{
+  color:#687891b4;
+  font-weight: 600;
+  text-align: right;
+}
+
+.tag-skills-name{
+  display: block;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  color:#d2ddf0b6;
+}
+
+.tag-skills-name-soft{
+  display: block;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  color:#d2ddf0b6;
+  padding-left: 43%;
+}
+
+@media only screen and (max-width: 768px) {
+  .table-skills-box {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin: 0 auto; /* Center the table on smaller screens */
+  }
+  .tag-skills-name{
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  .BackEnd-text, .FrontEnd-text{
+    font-size: 15px;
+  }
+  .tag-skills-name-soft{
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}
+
+.tag-skills:hover{
+  color:#d2ddf0a2;
+  cursor: pointer;
+  font-style: italic;
+}
+
+/* .tag-skills-name .skill-1, .skill-2, .skill-3, .skill-4, .skill-5, .skill-6, .skill-7, .skill-8
+,.skill-9, .skill-10, .skill-11, .skill-12, .skill-13, .skill-14, .skill-15
+{
+      transition-duration: 3000ms;
+      transition-property: transform;
+} */
+
+.tag-skills-name .skill-1:hover, .skill-2:hover, .skill-3:hover, .skill-4:hover, .skill-5:hover, .skill-6:hover, .skill-7:hover, .skill-8:hover
+, .skill-9:hover, .skill-10:hover, .skill-11:hover, .skill-12:hover, .skill-13:hover, .skill-14:hover, .skill-15:hover
+{
+  color:#d2ddf0f5;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.Email-link{
+  color: gray;
+  text-decoration: none;
+}
+
+.Email-link:hover{
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-item:hover{
+  font-style: italic;
+  font-weight: 500;
+  color: #0066c5;
+}
